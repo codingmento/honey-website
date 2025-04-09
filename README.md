@@ -4,6 +4,7 @@ A simple and elegant honey shop website built using **HTML**, **CSS**, and **Jav
 
 ## 🔗 Live Demo
 [Click here to view the website]([https://codingmento.github.io/honey-website/])
+https://codingmento.github.io/honey-website/
 
 ## 📸 Preview
 ![Preview]
