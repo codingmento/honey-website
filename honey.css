@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    
+   
+    
+}
+body{
+    color: #fff;
+    height: 100vh;
+   
+}
+header {
+    background-color: rgba(173, 128, 14, 0.39);
+   
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 30px  ;
+}
+header .icons div {
+    color: #fff;
+    
+    font-size:1.5rem;
+    margin-left:1.1em;
+    cursor:pointer;
+
+
+}
+header .icons div :hover{
+    color:khaki;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+header span{
+    font-family: "Amiri", serif;
+    
+    font-weight: 100;
+    margin: 50px;
+    
+    color: chocolate;
+
+}
+section pre{
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size:1.2em;
+  padding: 3px;
+    width: 50%;
+    margin-left: 50px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.logo{
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 10px;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+div p {
+    font-family: "Amiri", serif;
+    color: chocolate;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.navigation a:hover{
+    color: gold;
+}
+section{
+    padding: 200px 30px;
+}
+.main{
+    width: 100%;
+    min-width:100vh;
+    display: flex;
+    align-items: center;
+    
+    background-size:cover;
+    background: url(Image\ 1.jpg) ;
+    background-position:bottom;
+    
+    
+}
+.main-btn{
+    color: aliceblue;
+    background-color: darkgoldenrod;
+    text-decoration: none;
+    font-size: 1,1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    padding: 20px 30px ;
+
+}
+.main-btn:hover{
+    background-color:darkgoldenrod;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: azure;
+    font-size: 1.7em;
+    padding-right: 30px;
+    padding: 20px 20px 20px 10px;
+}
+.title{
+    display:block;
+    justify-content: center;
+    
+    color: gold;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    
+
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 10em;
+    overflow:hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    
+}
+ img{
+    width: 100px;
+    height: 100px;
+   
+    
+  
+}
+
+
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.asas{
+    color: black;
+    font-size: 8em;
+    text-align: center;
+    margin: -30px -50px;
+    padding-top: -500px;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #7c8b25;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -40px;
+}
+.info p {
+    margin: 5px;
+    text-align: center;
+
+}
+
+.projects .content{
+    margin-top: 30px;}
+
+
+#Search{
+    width: 50%;
+    height: 40px;
+    margin: 10px 300px;
+    border-radius: 4px ;
+    padding: 4px;
+   
+    display:block;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+button{
+    width :45%;
+    height: 3px;
+    border:#000;
+    cursor: pointer;
+    background: rgb(120, 94, 10);
+    color: #fff;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+button:hover{
+    background: #453603;
+    letter-spacing: 1px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 10em;
+    overflow:hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+   transform:scale(1.1); 
+   cursor: pointer;
+}
+
+.project-card:hover{
+   opacity: 0.7;
+ }
+ 
+ .project-image img{
+    width: 100%;
+}
+.project-info{
+    padding: 2em;
+}
+.project-category {
+    font-size: 0.8rem;
+    color: #000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+.more-details{
+    text-decoration: none;
+    color:paleturquoise ;
+}
+.more-details:hover{
+    color: #601cfc;
+}
+.cntact .icon{
+    font-size: 4.5em;
+
+}
+.contact .info h3{
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span {
+    color: chocolate;
+}
+.cardd{
+    margin: 20px;
+}
+.cardd:hover{
+    cursor: pointer;
+    transform:scale(1.1); 
+    
+    
+}
+.footer .credit{
+    font-size: 1rem;
+    color: #f9f8f8;
+    font-weight:500;  
+    padding: 1rem;
+}
+.footer .credit span{
+    color: chocolate;
+}
+@media (max-width:860px) {
+    header span {
+        margin-left:0px;
+    }
+    .logo{
+        padding:9px;
+    }
+    div p{
+       margin-left: 0px;
+       margin-top: px;
+        font-size:1em;
+      
+    }
+    .navigation a {
+        padding-left: 20px;
+    }
+    header .icons div {
+        border-radius: 2px ;
+        margin-left: 0px;
+      
+        font-size:1em;
+    
+    }
+
+    #Search{
+        width: 50%;
+        height: 40px;
+        margin: 5px 170px;
+        border-radius: 2px ;
+        padding: 2px;
+       
+        display:block;
+        align-items: center;
+        border-radius: 50px;
+       
+    }
+    button{
+        width :45%;
+        height: 3px;
+        
+        border-radius: 2px;
+     
+    }
+    
+}
+
+
+@media(max-width:600px){
+     *{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    }
+
+    header{
+        background-color: rgba(173, 128, 14, 0.39);
+   
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+ 
+} 
+header .icons div {
+   position: fixed;
+   top: 100%;right: 0;
+
+}
+
+
+header span {
+    margin-left:180px;
+    margin-right: 90px;
+}
+.main-btn{
+    font-size: 0.8em;
+    
+}
+section pre{
+   margin:90px 70px 0px -40px;
+   font-weight: 400;
+   font-size: 0.9em;
+}
+
+.logo{
+    padding: 120px;
+}
+.navigation a {
+    padding-left: 70px;
+}
+div p{
+    margin-top:3px;
+    margin-left: 180px;
+  
+}
+
+section{
+    padding: 200px 70px;
+}
+
+    
+.title{
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+}
+     section{
+        padding: 80px 20px;
+     }
+
+     #Search{
+        width: 40%;
+        height: 20px;
+        margin: 5px 150px;
+        border-radius: 2px ;
+        padding: 2px;
+       
+        display:block;
+        align-items: center;
+        border-radius: 10px;
+       
+    }
+    button{
+        width :50%;
+        height: 10px;
+        
+        border-radius: 2px;
+       
+    }
+    .footer{
+        
+        
+        display: block;
+        justify-content: center;
+    }
+    
+
+    
+   
+} 
+
+
+
+
+    @media(max-width:800px){
+        header span {
+            margin-left:9px;
+        }
+        .logo{
+            padding:px;
+        }
+        div p{
+           margin-left: -60px;
+            font-size:1em;
+        margin-top: 20px;
+        margin-bottom: 5px;
+          
+        }
+        .navigation a {
+            padding-left: 10px;
+        }
+    
+    
+
+    
+}
+@media(max-width:650px){
+    header span {
+        margin-left: 0px;
+       
+    }
+    .logo{
+       margin-left:20px;
+       padding-left: 0px;
+    }
+    div p{
+       margin-left: -90px;
+        font-size:0.em;
+      
+    }
+    .navigation a {
+        margin-left: 2px;
+        padding-left: 5px;
+    }
+    .project-category {
+        font-size: 0.7rem;
+        margin: 10px;
+        
+    }
+    .footer{
+        
+        
+        display: block;
+        justify-content: center;
+    }
+    
+
+
+   
+
+}
+@media(max-width:599px){
+    header span {
+        margin-left: 170px;
+    }
+    .logo{
+        padding: 70px;
+    }
+    div p {
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+    .navigation a{
+        margin-left: 10px;
+        padding-left: 50px;
+    }
+}
+@media(max-width:501px){
+    header span {
+        margin-left: 90px;
+    }
+    .logo{
+        padding: 30px;
+    }
+    div p {
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+    .navigation a{
+        margin-left: 20px;
+        padding-left: 5px;
+    }
+
+}
+@media(max-width:381px){
+    header span {
+        font-size: 1.5rem;
+       
+      
+    }
+    .logo{
+        padding: 30px;
+    }
+    div p {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .navigation a{
+        margin-left: 4px;
+        padding-left: 4px;
+    }
+    .card{
+        width: 100%;height: 100%;
+        display: flex;
+        justify-content: center; /* توسيط أفقياً */
+        align-items: center;     /* توسيط عمودياً */
+       
+    }
+    .project-card {
+        width: 60%;height: 70%;
+        display:block;
+        justify-content: center; /* توسيط أفقياً */
+        align-items: center;
+        
+
+    }
+    .project-card img{
+        margin: 9px;
+    }
+    img {
+        margin: 80px;
+        
+    }
+    .cardd{
+        width: 60%;height: 70%;
+        display:block;
+        justify-content: center; /* توسيط أفقياً */
+        align-items: center;
+        margin: 20px;
+
+    }
+
+}
+@media(max-width:360px){
+    header span {
+        font-size: 2rem;
+       
+      
+    }
+    .logo{
+        padding: 30px;
+    }
+    div p {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .navigation a{
+        margin-left: 4px;
+        padding-left: 4px;
+    }
+
+}
+@media(max-width:299px){
+    header span {
+        margin-left: 2px;
+    }
+    .logo{
+        padding: 3px;
+    }
+    div p {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .navigation a{
+        margin-left: 4px;
+        padding-left: 4px;
+    }
+
+
+
+
+}
