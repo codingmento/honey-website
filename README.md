@@ -3,7 +3,7 @@
 A simple and elegant honey shop website built using **HTML**, **CSS**, and **JavaScript**.
 
 ## 🔗 Live Demo
-[Click here to view the website]([https://codingmento.github.io/honey-website/])
+[Click here to view the website]
 https://codingmento.github.io/honey-website/
 
 ## 📸 Preview
