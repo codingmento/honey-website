@@ -105,7 +105,7 @@ div p {
 
 nav a {
     font-size: 1.8rem;
-    color: white;
+    color: rgb(17, 17, 17);
     margin-left: 3rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -119,7 +119,7 @@ nav a {
 
 .navbar a {
     text-decoration: none;
-    color: #fdf9fd;
+    color: #121112;
     font-size: 18px;
 }
 
@@ -128,13 +128,14 @@ nav a {
     font-size: 30px;
     cursor: pointer;
     display: none;
+    color: black;
     /* نخفيه بالكمبيوتر */
 }
 
 nav a:hover,
 nav a:active {
-    color: rgb(185, 172, 34);
-    border-bottom: 3px solid rgb(83, 60, 105);
+    color: rgb(125, 102, 24);
+    border-bottom: 3px solid rgb(96, 62, 7);
 }
 
 section {
@@ -193,14 +194,14 @@ section {
     margin-bottom: 30px;
 }
 
-.content {
+.cards-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.card {
+.product-card.large-card {
 
 
     background-color: #fff;
@@ -223,6 +224,203 @@ img {
 }
 
 
+.add-cart {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 20px;
+    min-height: 30px;
+    width: 110px;
+    background: linear-gradient(135deg, #9b8325, #6e6824);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-cart:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(137, 80, 18, 0.4);
+}
+
+/* shop */
+
+/* icons */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.cart-icon {
+    position: fixed;
+    top: 90px;
+    /* المسافة من فوق */
+    right: 20px;
+    /* خليها عالطرف اليمين */
+    background: #fff;
+    padding: 10px 14px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+#cartCount {
+    background: rgb(143, 90, 41);
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+
+#cartCount {
+    position: absolute;
+    top: -25px;
+    right: -7px;
+    background: #7b6109;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* بقلبها */
+
+/* السله */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+
+/* كرت السلة */
+.cart-card {
+    position: relative;
+    background: #675417;
+
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: pop 0.3s ease;
+}
+
+/* زر الإغلاق */
+.close-cart {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.close-cart:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* العنصر داخل السلة */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* الاسم تحت بعض */
+    justify-content: center;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+}
+
+.cart-item-price {
+    margin: 2px 0 0 0;
+    font-size: 14px;
+    color: #f3e8ff;
+}
+
+
+/* زر الحذف */
+.delete-item {
+    background: transparent;
+    border: none;
+    color: #f2f1f1;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete-item:hover {
+    transform: scale(1.2);
+}
+
+/* زر الطلب عبر واتساب */
+.order-btn {
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #87795a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #f3e8ff;
+}
+
+/* الإجمالي */
+.cart-total {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 @keyframes animation1 {
     0% {
@@ -234,13 +432,13 @@ img {
     }
 }
 
-.card:hover {
+.product-card.large-card:hover {
     transform: scale(1.1);
     cursor: pointer;
 
 }
 
-.asas {
+.img-wrapper {
     color: black;
     font-size: 8em;
     text-align: center;
@@ -250,6 +448,7 @@ img {
 
 .info {
     text-align: center;
+
 }
 
 .info h3 {
@@ -279,7 +478,7 @@ img {
 }
 
 #Search {
-    width: 200px;
+    width: 480px;
     height: 40px;
     margin: 10px;
 
@@ -356,7 +555,7 @@ button:hover {
 }
 
 .more-details:hover {
-    color: #601cfc;
+    color: #9f7b2c;
 }
 
 .cntact .icon {
@@ -480,42 +679,6 @@ button:hover {
 
 
 
-@media(max-width:995) {
-    nav {
-        position: absolute;
-        display: none;
-        right: 0;
-        top: 100%;
-
-        width: 40%;
-        border-left: 3px solid rgb(209, 183, 37);
-        border-bottom: 3px solid rgb(190, 171, 63);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: black;
-        border-top: 0.1rem solid rgb(22, 12, 26);
-    }
-
-    nav .active {
-        display: block;
-    }
-
-    nav a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid rgb(188, 149, 19);
-
-
-    }
-}
-
 @media (max-width: 910px) {
     .home-img {
         display: none;
@@ -531,10 +694,10 @@ button:hover {
         /* يخلي الروابط تبدا من الطرف */
         background-color: #b99a34f3;
         position: absolute;
-        top: 100px;
+        top: 70px;
         right: 0px;
         /* تبقى بجانب الشاشة مش تغطيها كلها */
-        width: 200px;
+        width: 170px;
         /* عرض صغير */
         padding: 15px;
         border-radius: 8px;
@@ -545,6 +708,8 @@ button:hover {
     .navbar.active {
         display: flex;
     }
+
+
 }
 
 @media(max-width:600px) {
@@ -588,6 +753,12 @@ button:hover {
 
 
 
+    #Search {
+        width: 200px;
+        height: 40px;
+
+
+    }
 
 
 
